@@ -41,7 +41,7 @@ class Example(QMainWindow):
         fileMenu = menubar.addMenu('文件(&F)')
         fileMenu.addAction(newAct)
         fileMenu.addMenu(saveMenu)
-        fileMenu.addSeparator()
+        fileMenu.addSeparator()  # addSeparator, 添加分隔符
         fileMenu.addAction(exitAct)
 
         # 使用工具栏
