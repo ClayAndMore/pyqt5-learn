@@ -13,8 +13,13 @@ class Ico(QWidget):
         self.initUI()
 
     def initUI(self):
-        #  setGeometry（）做了两件事情：它在屏幕上定位窗口并设置它的大小；前两个参数是窗口的x和y位置；第三个是宽度；第四个是窗口的高度。
-        #  实际上，它在一个方法中组合了resize（）和move（）方法。
+        """
+        setGeometry（）做了两件事情：它在屏幕上定位窗口并设置它的大小；前两个参数是窗口的x和y位置；第三个是宽度；第四个是窗口的高度。
+        实际上，它在一个方法中组合了move（） resize（）方法, resize（）是设置窗口大小
+        eg: setGeometry (9,9, 50, 25)
+        从屏幕上（9，9）位置开始（即为最左上角的点），显示一个50*25的界面（宽50，高25）
+        """
+
         self.setGeometry(300, 300, 300, 220)
         self.setWindowTitle('标题')
         self.setWindowIcon(QIcon('tubiao.ico'))
